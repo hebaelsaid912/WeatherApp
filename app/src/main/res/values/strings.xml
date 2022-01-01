@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="location">Location</string>
+    <string name="updated_at">updated at : </string>
+    <string name="status">Clear Sky</string>
+    <string name="temp">24°C</string>
+    <string name="temp_min">Temp Min</string>
+    <string name="temp_max">Temp Max</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="precip">Precip_mm</string>
+    <string name="time">06:40 AM</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="wind">Wind</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="created_by">Created By</string>
+    <string name="heba">Heba</string>
+    <string name="locationRequestNeeded">Location Request Needed !!</string>
+
+</resources>
