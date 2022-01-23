@@ -31,6 +31,6 @@ You can clone code and run it using :
 - Retrofit2 & Gson - construct the REST APIs.
 - Glide - loading images.
 - play-services-location - (FusedLocationProvider - Geocoder )
-## Release ABK
-Go to the [Releases](https://github.com/hebaelsaid912/WeatherApp/tree/main/app/release) to download the latest ABK.
+## Release APK
+Go to the [Releases](https://github.com/hebaelsaid912/WeatherApp/tree/main/app/release) to download the latest APK.
 
