@@ -17,6 +17,7 @@ You can clone code and run it using :
   IDE : Android Studio
   Gradle Version : 7.0.2
   Compile Sdk : 31
+  Java 11
 ```
 
 ## Tech stack & Open-source libraries
