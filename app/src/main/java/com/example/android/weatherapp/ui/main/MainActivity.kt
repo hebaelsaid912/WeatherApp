@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
         val check = checkPermission()
         Log.d("MainActivity", check.toString())
         if (check) {
-            fusedLocationProviderClient.lastLocation.addOnSuccessListener { location ->
+           /* fusedLocationProviderClient.lastLocation.addOnSuccessListener { location ->
                 val geocoder: Geocoder =
                     Geocoder(this@MainActivity, Locale.ENGLISH)
                 val address = geocoder.getFromLocation(
@@ -105,6 +105,37 @@ class MainActivity : AppCompatActivity() {
                     location.longitude,
                     1
                 )
+                 Log.d("MainActivity","${address[0].latitude},${address[0].longitude}")
+                 Log.d("MainActivity", address[0].countryName)
+                 Log.d("MainActivity", address[0].countryName)
+                 Log.d("MainActivity", address[0].locality)
+                 Log.d("MainActivity", address[0].adminArea.toString() + " ")
+                 Log.d(
+                     "MainActivity",
+                     address[0].featureName.toString() + " "
+                 )
+                 Log.d(
+                     "MainActivity",
+                     address[0].subAdminArea.toString() + " "
+                 )
+                 Log.d(
+                     "MainActivity",
+                     address[0].getAddressLine(0).toString() + " "
+                 )
+              val city = address[0].subAdminArea.toString()
+                viewModel.setCityValue(city)
+            }*/
+            fusedLocationProviderClient.lastLocation.addOnCompleteListener { location ->
+                val geocoder =
+                    Geocoder(this@MainActivity, Locale.ENGLISH)
+                val address = geocoder.getFromLocation(
+                    location.result.latitude,
+                    location.result.longitude,
+                    1
+                )
+                 Log.d("MainActivity","${address[0].latitude},${address[0].longitude}")
+                 Log.d("MainActivity","${address[0].longitude},${address[0].latitude}")
+                 Log.d("MainActivity", address[0].countryName)
                  Log.d("MainActivity", address[0].countryName)
                  Log.d("MainActivity", address[0].locality)
                  Log.d("MainActivity", address[0].adminArea.toString() + " ")
